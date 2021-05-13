@@ -10,21 +10,29 @@ public class FirstAssignment {
 		System.out.println("Welcome");
 		int attendance = (int)Math.floor(Math.random()*3); 
 		System.out.println(attendance);
-		if(attendance == 0) {
+		switch(attendance)
+		{
+		case 0:
 			System.out.println("Employee is absent");
-		}
-		else if (attendance == 2) {
+			break;
+		case 1:
 			System.out.println("Employee is part time present");
-			int total_salary = sal*part_time_hours;
-			System.out.println(total_salary);
-		}
-		else {
-			System.out.println("Employee is present");
+			int part_time_salary = sal*part_time_hours;
+			System.out.println(part_time_salary);
+		break;
+		case 2:
+			System.out.println("Employee is full time present");
 			int total_salary = sal*hours;
-					System.out.println(total_salary);
-		}
+			System.out.println(total_salary);
+		break;
+		default:
+		System.out.println("Invalid output");
+		break;
+		
 		
 		
 	}
 
 }
+}
+
