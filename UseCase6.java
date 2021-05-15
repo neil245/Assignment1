@@ -10,8 +10,8 @@ public class UseCase6 {
 		{
 			total_salary = wage*hours*days;
 			System.out.println(total_salary);
-			hours++;
-			days++;
+			hours ++;
+			days ++;
 		}
 	}
 
